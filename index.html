@@ -15,10 +15,16 @@
 
 <body>
     <div class="container">
+        <!--Header-->
         <div class="header">
+            <div id="signInButton">
+                <a href="#"><img src="./images/user.png" alt="Sign In" /></a>
+            </div>
+            <!--Logo-->
             <div class="site-logo">
                 <a href="#"><img src="./images/bbc-logo.png" alt="BBC Logo" style="width:100px" /></a>
             </div>
+            <!--Main navigation-->
             <nav>
                 <ul>
                     <li><a href="#"><img src="./images/user.png" alt="Sign-in" style="vertical-align:middle" />&nbsp;&nbsp;Sign in</a></li>
@@ -33,14 +39,38 @@
                     <li><a href="#">...</a></li>
                 </ul>
             </nav>
+            <!--Search & Mobile menu toggler-->
             <div class="site-search">
+                <div id="mobileNavToggle">
+                    <img src="./images/more.png" onclick="ToggleMobileNav();" alt="Menu" />
+                </div>
                 <a href="#">
                     <div class="site-search-input">
-                        Search BBC
+                        <span>Search BBC</span>
                     </div>
                 </a>
             </div>
         </div>
+        <!--Mobile navigation-->
+        <div id="mobileNav">
+            <div id="closeMobileNavBtn" onclick="ToggleMobileNav();">
+                <img src="./images/close.png" style="width:10px;height:10px" alt="Close Menu" />
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Reel</a></li>
+                <li><a href="#">Worklife</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Future</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">Sounds</a></li>
+            </ul>
+        </div>
+        <!--Latest News section-->
         <div class="latest-news">
             <div class="title">
                 <div class="welcome">Welcome to BBC.com</div>
@@ -72,12 +102,110 @@
                 </div>
             </div>
         </div>
-        <div class="news">
-
+        <!--Reel-->
+        <div class="reel">
+            <div class="title">
+                <div style="float: left;margin-right:25px">
+                    <h2>Reel</h2>
+                    <p>The most amazing videos from the BBC</p>
+                </div>
+                <div class="visit-reel">
+                    <a href="#">Visit Reel&nbsp;→</a>
+                </div>
+            </div>
+            <div class="reel-cards">
+                <a href="#">
+                    <div class="reel-card" style="background-image: url('./images/p0gmmcdw.jpg');">
+                        <div class="play-button"></div>
+                        <p class="content">Behind the scenes with Scorsese and his most iconic actors</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="reel-card" style="background-image: url('./images/p0gmbfkr.jpg');">
+                        <p class="content">The king who had to ask his family for money</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="reel-card" style="background-image: url('./images/p0gm27jq.jpg');">
+                        <p class="content">Epigenetics: Can we control our genes?</p>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="editors-pick">
-
+        <!--More News section-->
+        <div class="more-news">
+            <aside>
+                <h3>FROM OUR CORRESPONDENTS</h3>
+                <table>
+                    <td>
+                        <img src="./images/p0f4m6cr.jpg" alt="Madeline Halpert" />
+                    </td>
+                    <td>
+                        <p class="headline">NHL drops ban on rainbow-coloured Pride stick tape</p>
+                        <p class="author">By Madeline Halpert</p>
+                    </td>
+                </table>
+                <table>
+                    <td><img src="./images/p0f4m6z4.jpg" alt="Max Matza" /></td>
+                    <td>
+                        <p class="headline">House to vote on latest Republican Speaker nominee</p>
+                        <p class="author">By Max Matza</p>
+                    </td>
+                </table>
+                <table>
+                    <td><img src="./images/p02zb2rl.jpg" alt="Anthony Zurcher" /></td>
+                    <td>
+                        <p class="headline">Republicans self-destruct again in US Speaker saga</p>
+                        <p class="author">By Anthony Zurcher</p>
+                    </td>
+                </table>
+                <table>
+                    <td><img src="./images/p0862gjj.jpg" alt="Jonathan Head" /></td>
+                    <td>
+                        <p class="headline">The Thais caught up in the Israel-Gaza war</p>
+                        <p class="author">By Jonathan Head</p>
+                    </td>
+                </table>
+                <table>
+                    <td><img src="./images/p0cx0nsf.jpg" alt="Tiffanie Turnbull" /></td>
+                    <td>
+                        <p class="headline">The laidback Australian city key to countering China</p>
+                        <p class="author">By Tiffanie Turnbull</p>
+                    </td>
+                </table>
+                <table>
+                    <td><img src="./images/p0d2mr2j.jpg" alt="Rupert Wingfield-Hayes" /></td>
+                    <td>
+                        <p class="headline">Why the Philippines and China are on a collision course</p>
+                        <p class="author">By Rupert Wingfield-Hayes</p>
+                    </td>
+                </table>
+                <table>
+                    <td><img src="./images/p0f4m6cr.jpg" alt="Madeline Halpert" /></td>
+                    <td>
+                        <p class="headline">American Jews and Palestinians face fear and hatred</p>
+                        <p class="author">By Madeline Halpert</p>
+                    </td>
+                </table>
+                <table>
+                    <td><img src="./images/p06gw5x9.jpg" alt="Katy Watson" /></td>
+                    <td>
+                        <p class="headline">Chainsaw-wielding TikTok star leads polls in Argentina</p>
+                        <p class="author">By Katy Watson</p>
+                    </td>
+                </table>
+            </aside>
+            <section>
+                <div class="big-news-card">
+                    <div class="news-card" style="background-image: url('./images/_131522871_mediaitem131509132.jpg')">
+                        <p class="news-card-title"><a href="#">Bacterium may have caused mystery elephant deaths</a></p>
+                        <p class="news-card-description"><a href="#">A bacterium found in several wild elephants may explain why hundreds died suddenly in Botswana in...</a></p>
+                        <p class="news-card-footer"><a href="#">SCIENCE & ENVIRONMENT</a></p>
+                    </div>
+                </div>
+            </section>
         </div>
+        <!--Footer-->
         <div class="footer">
             <h2>Explore the BBC</h2>
             <ul class="site-sections">
@@ -109,6 +237,20 @@
             <p class="copyright"><span style="font-weight: 500;">Copyright © 2023 BBC.</span>&nbsp;The BBC is not responsible for the content of external sites. <a href="#"><span style="font-weight: 500;">Read about our approach to external linking.</span></a></p>
         </div>
     </div>
+    <!--Scripts-->
+    <script type="text/javascript">
+        function ToggleMobileNav() {
+
+            var d = document.getElementById('mobileNav').style.display;
+
+            if (d == 'block') {
+                document.getElementById('mobileNav').style.display = 'none';
+            } else {
+                document.getElementById('mobileNav').style.display = 'block';
+            }
+
+        }
+    </script>
 </body>
 
 </html>
