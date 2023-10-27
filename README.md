@@ -18,7 +18,7 @@ You can view a live demo of the website: https://ahmedosama007.github.io/bbc-pro
 
 To run this project locally, you need to have **Git** and a web browser installed on your computer. Follow these steps:
 
-- Clone this repository by running `git clone https://github.com/your-username/bbc-clone.git` in your terminal.
+- Clone this repository by running `git clone https://github.com/ahmedosama007/bbc-project.git` in your terminal.
 - Open the `index.html` file in your web browser.
 - Enjoy!
 
