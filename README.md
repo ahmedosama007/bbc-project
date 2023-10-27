@@ -1,6 +1,6 @@
 # BBC Clone
 
-This project is a clone of the [BBC] home page, created as a part of the El-Manara Front-End course. The aim of this project is to showcase what we learned about HTML, CSS, responsive design, and other front-end technologies.
+This project is a clone of the **BBC** home page, created as a part of the El-Manara Front-End course. The aim of this project is to showcase what we learned about HTML, CSS, responsive design, and other front-end technologies.
 
 ## Features
 
@@ -12,11 +12,11 @@ This project is a clone of the [BBC] home page, created as a part of the El-Mana
 
 ## Demo
 
-You can view a live demo of the website [here].
+You can view a live demo of the website: https://ahmedosama007.github.io/bbc-project/.
 
 ## Installation
 
-To run this project locally, you need to have [Git] and a web browser installed on your computer. Follow these steps:
+To run this project locally, you need to have **Git** and a web browser installed on your computer. Follow these steps:
 
 - Clone this repository by running `git clone https://github.com/your-username/bbc-clone.git` in your terminal.
 - Open the `index.html` file in your web browser.
@@ -24,4 +24,4 @@ To run this project locally, you need to have [Git] and a web browser installed 
 
 ## License
 
-This project is licensed under the [MIT License].
+This project is licensed under the **MIT License**.
