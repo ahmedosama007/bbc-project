@@ -35,13 +35,13 @@ h6 {
 .header {
     background: #000;
     color: #fff;
-    padding: 10px 10px 8px 10px;
+    padding: 12px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #signInButton {
@@ -55,7 +55,7 @@ h6 {
 }
 
 .header .site-logo {
-    padding: 0 10px;
+    padding: 0 0 0 10px;
 }
 
 .header nav {
@@ -211,6 +211,7 @@ h6 {
     font-weight: 700;
     font-size: 24px;
     float: left;
+    color: #4a4a4a;
 }
 
 .latest-news .title .date {
@@ -379,17 +380,17 @@ h6 {
 .reel .reel-cards .reel-card {
     background-color: #fff;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     background-position: top;
-    min-height: 300px;
-    width: 400px;
+    min-height: 280px;
+    width: 350px;
     color: #444444;
     padding: 10px 15px;
     margin-bottom: 25px;
 }
 
 .reel .reel-cards .reel-card .content {
-    margin-top: 225px;
+    margin-top: 200px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -462,7 +463,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: top;
     /* background-size: contain; */
-    width: 49%;
+    width: 32%;
     color: #000;
     padding: 10px 15px;
     margin-bottom: 20px;
@@ -487,11 +488,11 @@ h6 {
     text-shadow: rgba(0, 0, 0, 0.1) 1px 1px;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 .more-news .news-card .news-card-footer {
-    margin-top: 15px;
+    margin-top: 48px;
     font-size: 14px;
     text-transform: uppercase;
     border-left: 2px solid red;
@@ -595,7 +596,7 @@ h6 {
 
 /*Media queries*/
 
-@media screen and (max-width: 1388px) {
+@media screen and (max-width: 1279px) {
 
     .header .site-search .site-search-input {
         color: #000;
@@ -608,54 +609,7 @@ h6 {
     }
 }
 
-@media screen and (max-width: 1344px) {
-
-    .latest-news {
-        grid-template-areas: 'big-news-title big-news-title big-news-title big-news-title'
-            'big-news-card big-news-card big-news-card big-news-card'
-            'small-news-cards small-news-cards small-news-cards small-news-cards';
-    }
-
-    .latest-news .small-news-cards {
-        justify-content: space-between;
-        align-content: space-around;
-    }
-
-    .latest-news .small-news-card {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-
-    .more-news aside table img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1165px) {
-
-/*     .more-news aside {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .more-news aside table img {
-        display: inline-block;
-    }
-
-    .more-news section {
-        width: 100%;
-    } */
-}
-
-@media screen and (max-width: 992px) {
-
-    .header nav ul li {
-        margin-right: 10px;
-    }
+@media screen and (max-width: 1007px) {
 
     .header nav ul li:first-child {
         width: inherit;
@@ -666,10 +620,17 @@ h6 {
     }
 
     .latest-news {
-        padding: 20px 1%;
+        grid-template-areas: 'big-news-title big-news-title big-news-title big-news-title'
+            'big-news-card big-news-card big-news-card big-news-card'
+            'small-news-cards small-news-cards small-news-cards small-news-cards';
+        padding: 20px 2%;
     }
 
     .latest-news .small-news-card {
+        justify-content: space-between;
+        align-content: space-around;
+        margin-top: 15px;
+        margin-bottom: 15px;
         min-width: 49%;
         min-height: 250px;
     }
@@ -680,49 +641,52 @@ h6 {
     }
 
     .reel {
-        padding: 20px 1%;
+        padding: 20px 2%;
     }
 
     .more-news {
-        padding: 20px 1%;
+        padding: 20px 2%;
     }
 
-    .more-news aside{
+    .more-news aside {
         width: 33%;
         float: right;
-        min-height: 1385px;
+        min-height: 1485px;
     }
 
     .more-news aside table {
         padding: 20px 18px;
     }
 
-    .more-news section{
-        width: 66%;
-        float: left;
+    .more-news aside table img {
+        display: none;
     }
 
     .more-news aside table .headline {
         text-align: center;
         font-size: 16px;
     }
-    
+
     .more-news aside table .author {
         text-align: center;
     }
 
-    .footer {
-        padding: 30px 5% 20px 5%;
+    .more-news section {
+        width: 66%;
+        float: left;
     }
 
-}
-
-@media screen and (max-width: 800px) {
+    .more-news .news-card {
+        width: 49%;
+    }
 
     .more-news .big-news-card .news-card .news-card-title {
         font-size: 28px;
     }
 
+    .footer {
+        padding: 30px 5% 20px 5%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -735,7 +699,7 @@ h6 {
         margin-right: 0;
     }
 
-    .more-news aside{
+    .more-news aside {
         min-height: 1371px;
     }
 
@@ -755,7 +719,7 @@ h6 {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
 
     .header {
         justify-content: space-between;
@@ -772,10 +736,6 @@ h6 {
     #mobileNavToggle {
         display: block;
     }
-
-}
-
-@media screen and (max-width: 576px) {
 
     .latest-news .news-card .news-card-title {
         margin-top: 250px;
@@ -794,12 +754,13 @@ h6 {
         margin-bottom: 5px;
         background-image: none !important;
         border-bottom: 1px solid #ccc;
+        padding: 5px 0;
     }
 
     .latest-news .small-news-card .news-card-title {
         min-height: inherit;
         margin-top: inherit;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         font-weight: 600;
         font-size: 15px;
         text-shadow: none;
@@ -807,6 +768,7 @@ h6 {
 
     .latest-news .small-news-card .news-card-footer {
         font-size: 13px;
+        margin-top: 5px;
     }
 
     .latest-news .small-news-card .news-card-title a {
@@ -817,19 +779,24 @@ h6 {
         color: #b6b6b6;
     }
 
-    .more-news aside{
+    .more-news {
+        background-color: #fff;
+    }
+
+    .more-news aside {
         width: 100%;
         min-height: inherit;
         float: left;
         border: 1px solid #E91802;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
 
     .more-news aside table {
-        background-color: rgb(240, 240, 240);
+        background-color: #f2f2f2;
         padding: 28px 18px;
     }
-    
+
     .more-news aside table .headline {
         font-weight: 600;
     }
@@ -837,50 +804,52 @@ h6 {
     .more-news aside table a {
         color: #000;
     }
-    
+
     .more-news aside table:nth-child(odd) {
         background-color: #fff;
     }
 
-    .more-news section{
+    .more-news section {
         width: 100%;
         background-color: white;
     }
 
-    .more-news .news-card {
+    .more-news .big-news-card .news-card {
+        margin-bottom: 10px;
+    }
+
+    .more-news .small-news-cards .news-card {
         min-width: 100%;
         min-height: 25px;
         margin-top: 5px;
         margin-bottom: 5px;
         border-bottom: 1px solid #ccc;
+        padding: 10px 0;
     }
-    
-    .more-news .news-card:nth-last-of-type(2),
-    .more-news .news-card:nth-last-of-type(3),
-    .more-news .news-card:nth-last-of-type(4),
-    .more-news .news-card:nth-last-of-type(5),
-    .more-news .news-card:nth-last-of-type(6),
-    .more-news .news-card:nth-last-of-type(7),
-    .more-news .news-card:nth-last-of-type(8),
-    .more-news .news-card:nth-last-of-type(1){
+
+    .more-news .small-news-cards .news-card:last-child {
+        border-bottom: none;
+    }
+
+    .more-news .small-news-cards .news-card {
         background-image: none !important;
     }
 
-    .more-news .news-card:hover {
+    .more-news .small-news-cards .news-card:hover {
         opacity: inherit;
     }
-    
-    .more-news .news-card .news-card-title {
+
+    .more-news .small-news-cards .news-card .news-card-title {
         min-height: inherit;
         margin-top: inherit;
         margin-bottom: 8px;
     }
-    
-    .more-news .news-card .news-card-footer {
+
+    .more-news .small-news-cards .news-card .news-card-footer {
         margin-top: 8px;
         font-size: 14px;
     }
-    
+
 }
 
 @media screen and (max-width: 450px) {
@@ -890,7 +859,4 @@ h6 {
         float: left;
     }
 
-    .reel .reel-cards .reel-card {
-        width: 100%;
-    }
 }
